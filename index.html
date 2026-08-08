@@ -1,21 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Samarth Dhol - Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samarth Dhol | Resume</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: white;
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .degree {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .university {
+            font-size: 17px;
+            color: #666;
+            margin-bottom: 35px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .view {
+            background: #222;
+            color: white;
+        }
+
+        .download {
+            border: 1px solid #222;
+            color: #222;
+            background: white;
+        }
+
+        .button:hover {
+            opacity: 0.85;
+        }
+
+        .links {
+            margin-top: 35px;
+        }
+
+        .links a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 45px 25px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            .degree {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Samarth Dhol</h1>
+    <div class="container">
 
-    <p>
-        MS in Computer Science<br>
-        University of Massachusetts Amherst
-    </p>
+        <h1>Samarth Dhol</h1>
 
-    <h2>Resume</h2>
+        <p class="degree">M.S. in Computer Science</p>
 
-    <p>This is my GitHub Pages resume.</p>
+        <p class="university">
+            University of Massachusetts Amherst
+        </p>
+
+        <p class="description">
+            Artificial Intelligence &nbsp;•&nbsp;
+            Machine Learning &nbsp;•&nbsp;
+            Deep Learning
+        </p>
+
+        <div class="buttons">
+
+            <!-- Opens the resume PDF in the browser -->
+            <a href="resume.pdf" target="_blank" class="button view">
+                View Resume
+            </a>
+
+            <!-- Downloads the resume PDF -->
+            <a href="resume.pdf" download="Samarth_Dhol_Resume.pdf" class="button download">
+                Download Resume
+            </a>
+
+        </div>
+
+        <div class="links">
+
+            <a href="https://github.com/imsamarth123" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/samarth-dhol-a68826258/" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="mailto:sdhol@umass.edu">
+                Email
+            </a>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
